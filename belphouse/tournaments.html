@@ -1,0 +1,871 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BELP House - Baby Elephant Utilities</title>
+
+    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/plugin/nice-select.css">
+    <link rel="stylesheet" href="assets/css/plugin/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/plugin/slick.css">
+    <link rel="stylesheet" href="assets/css/arafat-font.css">
+    <link rel="stylesheet" href="assets/css/plugin/animate.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+</head>
+
+<body class="mytour">
+    <!-- start preloader -->
+    <div class="preloader" id="preloader"></div>
+    <!-- end preloader -->
+
+    <!-- Scroll To Top Start-->
+    <a href="javascript:void(0)" class="scrollToTop"><i class="fas fa-angle-double-up"></i></a>
+    <!-- Scroll To Top End -->
+
+    <!-- header-section start -->
+    <header class="header-section">
+        <div class="overlay">
+            <div class="container">
+                <div class="row d-flex header-area">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/images/logo.png" class="logo" style="max-width: 250px;" alt="logo">
+                        </a>
+                        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbar-content">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbar-content">
+                            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="mybelp.html">My BELP</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="nfts.html">NFT</a>
+                                </li>
+								<li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="mybets.html">Bets</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">Tournaments</a>
+                                </li>
+                            </ul>
+                            <div class="right-area header-action d-flex align-items-center max-un">
+                                <button type="button" class="btn-matic" data-bs-toggle="modal"
+                                    data-bs-target="#connect">
+                                    PRE-SALE
+                                </button>
+                            </div>
+                        </div>
+                    </nav>
+					<!--span class="text-center text-white">Wallet Address: disconnected</span-->
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-section end -->
+
+	<!-- Banner Section start -->
+    <section class="banner-section inner-banner belphouse">
+        <div class="overlay" style="background: rgb(75,176,237); background: linear-gradient(90deg, rgba(75,176,237,1) 35%, rgba(21,108,164,1) 100%);">
+            <!--div class="shape-area">
+                <img src="assets/images/big_BELP.png" class="tournaments-illu" alt="image">
+            </div-->
+            <div class="banner-content">
+                <div class="container">
+                    <div class="content-shape">
+                        <img src="assets/images/baby_cup.png" class="obj-8" alt="image">
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-9 col-md-10">
+                            <div class="main-content">
+                                <h1>LIVE <i class="fas fa-satellite-dish"></i></h1>
+								<div class="breadcrumb-area">
+                                    <nav aria-label="breadcrumb">
+                                        <ol class="breadcrumb d-flex align-items-center">
+                                            <li class="breadcrumb-item"></li>
+                                            <li class="breadcrumb-item active" aria-current="page">
+											Battle Tournaments
+											</li>
+                                        </ol>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner Section end -->
+
+    <!-- Dashboard Content Section start -->
+    <section class="tournaments-section">
+        <div class="overlay">
+		
+			<!-- header-section height >
+            <div class="tournaments-heading"></div-->
+
+            <div class="container pt-50">
+			<div class="row justify-content-center">
+            <div class="col-xl-10 col-lg-12">
+                <div class="d-flex justify-content-center">
+                    <ul class="nav glow" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="cmn-btn active" id="current-tab" data-bs-toggle="tab" data-bs-target="#current"
+                                type="button" role="tab" aria-controls="current"
+                                aria-selected="false">BATTLES</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="cmn-btn" id="history-tab" data-bs-toggle="tab" data-bs-target="#history"
+                                type="button" role="tab" aria-controls="history" aria-selected="false">HISTORY</button>
+                        </li>
+                    </ul>
+                </div>
+				<!--div class="cards-img">
+					 <img src="assets/images/baby_cup.png" alt="icon">
+				</div-->
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="current" role="tabpanel" aria-labelledby="current-tab">
+                        <div class="row">
+                            <div class="col-12">
+								<div class="filter-section mb-60 glow">
+									<div class="section-text text-center">
+										<h5>Current Tournaments</h5>
+									</div>
+									<form action="#">
+										<div class="row">
+											<div class="col-xl-6 col-lg-6 col-md-6">
+												<div class="single-input">
+													<select>
+														<option>Filter by Rarity</option>
+														<option value="2">Magical</option>
+														<option value="3">Mythical</option>
+														<option value="4">Epic</option>
+														<option value="3">Legendary</option>
+														<option value="4">Demi-God</option>
+													</select>
+												</div>
+											</div>
+											<div class="col-xl-6 col-lg-6 col-md-6">
+												<div class="single-input">
+													<select>
+														<option>Order by date</option>
+														<option value="1">Newest</option>
+														<option value="2">Oldest</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+                                <div class="single-item glow">
+                                    <div class="left-item">
+                                        <div class="logo-item">
+                                            <img src="assets/images/tournament_1.png" alt="icon">
+                                        </div>
+                                        <div class="mid-area">
+                                            <h3>Tournament 1</h3>
+                                            <ul>
+                                                <li>
+                                                    <span><i class="far fa-calendar-alt"></i></span>
+                                                    FEB 15 13:30 UTC
+                                                </li>
+                                                <li>
+                                                    <span><i class="fas fa-users"></i></span>
+                                                    36 PARTICIPANTS
+                                                </li>
+												<li>
+                                                    <span><i class="fas fa-info"></i></span>
+                                                    Lengendary + Demi
+                                                </li>
+                                            </ul>
+                                        </div>
+									</div>
+                                    <div class="last-item">
+                                        <h5><img src="assets/images/fav.png" alt="icon" style="height: 35px"> Prize</h5>
+                                        <h4>25%</h4>
+                                        <span class="btn-border">
+                                            <a href="" class="cmn-btn" data-bs-toggle="modal" data-bs-target="#tournaments">Place Bets</a>
+                                        </span>
+                                    </div>
+                                </div>
+								<div class="single-item glow">
+                                    <div class="left-item">
+                                        <div class="logo-item">
+                                            <img src="assets/images/tournament_2.png" alt="icon">
+                                        </div>
+                                        <div class="mid-area">
+                                            <h3>Tournament 2</h3>
+                                            <ul>
+                                                <li>
+                                                    <span><i class="far fa-calendar-alt"></i></span>
+                                                    FEB 27 23:00 UTC
+                                                </li>
+                                                <li>
+                                                    <span><i class="fas fa-users"></i></span>
+                                                    48 PARTICIPANTS
+                                                </li>
+												<li>
+                                                    <span><i class="fas fa-info"></i></span>
+                                                    Magical + Mythical
+                                                </li>
+                                            </ul>
+                                        </div>
+									</div>
+                                    <div class="last-item">
+                                        <h5><img src="assets/images/fav.png" alt="icon" style="height: 35px"> Prize</h5>
+                                        <h4>25%</h4>
+                                        <span class="btn-border">
+                                            <a href="" class="cmn-btn" data-bs-toggle="modal" data-bs-target="#tournaments">Place Bets</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-60">
+                            <div class="col-lg-12 d-flex justify-content-center">
+                                <nav aria-label="Page navigation" class="d-flex justify-content-center">
+                                    <ul class="pagination justify-content-center align-items-center pb-20">
+                                        <li class="page-item">
+                                            <a class="page-btn previous glow" href="javascript:void(0)"
+                                                aria-label="Previous">
+                                                <img src="assets/images/icon/arrow-left.png" alt="icon">
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link xlr glow" href="javascript:void(0)">1</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link xlr active glow"
+                                                href="javascript:void(0)">2</a></li>
+                                        <li class="page-item"><a class="page-link xlr glow" href="javascript:void(0)">3</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link xlr glow" href="javascript:void(0)">4</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-btn next glow" href="javascript:void(0)" aria-label="Next">
+                                                <img src="assets/images/icon/arrow-right.png" alt="icon">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="history" role="tabpanel" aria-labelledby="history-tab">
+						<div class="filter-section mb-60 glow">
+							<div class="section-text text-center">
+								<h5>Search in History</h5>
+							</div>
+							<form action="#">
+								<div class="row">
+									<div class="col-xl-3 col-lg-6">
+										<div class="input-area">
+											<img src="assets/images/icon/search-icon.png" alt="icon">
+											<input type="text" placeholder="Search by name">
+										</div>
+									</div>
+									<div class="col-xl-3 col-lg-6">
+										<div class="single-input">
+											<select>
+												<option>Filter by Rarity</option>
+												<option value="2">Magical</option>
+												<option value="3">Mythical</option>
+												<option value="4">Epic</option>
+												<option value="3">Legendary</option>
+												<option value="4">Demi-God</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-xl-3 col-lg-6">
+										<div class="single-input">
+											<select>
+												<option>Order by date</option>
+												<option value="1">Newest</option>
+												<option value="2">Oldest</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-xl-3 col-lg-6">
+										<div class="input-area">
+											<img src="assets/images/icon/date-icon.png" alt="icon">
+											<input type="text" id="dateSelect" placeholder="Select Date">
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+                        <div class="table-responsive glow">
+												<table class="table">
+													<thead>
+														<tr>
+															<th scope="col">Date</th>
+															<th scope="col">Name</th>
+															<th scope="col">Winner</th>
+															<th scope="col">Prize</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td><button class="cmn-btn view" type="button" data-bs-toggle="modal" data-bs-target="#tourna_his">View</button>Feb 20 - 20:25 UTC</td>
+															<td>Tournament 1</td>
+															<td>46510</td>
+															<td>40% ($BELP)</td>
+														</tr>
+														<tr>
+															<td><button class="cmn-btn view" type="button" data-bs-toggle="modal" data-bs-target="#tourna_his">View</button>Feb 20 - 20:25 UTC</td>
+															<td>Tournament 2</td>
+															<td>46510</td>
+															<td>25% ($BELP)</td>
+														</tr>
+														<tr>
+															<td><button class="cmn-btn view" type="button" data-bs-toggle="modal" data-bs-target="#tourna_his">View</button>Feb 20 - 20:25 UTC</td>
+															<td>Tournament 3</td>
+															<td>46510</td>
+															<td>35% ($BELP + HHNFT)</td>
+														</tr>
+														<tr>
+															<td><button class="cmn-btn view" type="button" data-bs-toggle="modal" data-bs-target="#tourna_his">View</button>Feb 20 - 20:25 UTC</td>
+															<td>Tournament 4</td>
+															<td>46510</td>
+															<td>35% ($BELP)</td>
+														</tr>
+														<tr>
+															<td><button class="cmn-btn view" type="button" data-bs-toggle="modal" data-bs-target="#tourna_his">View</button>Feb 20 - 20:25 UTC</td>
+															<td>Tournament 5</td>
+															<td>46510</td>
+															<td>10% ($BELP)</td>
+														</tr>
+													</tbody>
+												</table>
+						</div>
+                        <div class="row mt-60">
+                            <div class="col-lg-12 d-flex justify-content-center">
+                                <nav aria-label="Page navigation" class="d-flex justify-content-center">
+                                    <ul class="pagination justify-content-center align-items-center pb-20">
+                                        <li class="page-item">
+                                            <a class="page-btn previous glow" href="javascript:void(0)"
+                                                aria-label="Previous">
+                                                <img src="assets/images/icon/arrow-left.png" alt="icon">
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link xlr glow" href="javascript:void(0)">1</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link xlr active glow"
+                                                href="javascript:void(0)">2</a></li>
+                                        <li class="page-item"><a class="page-link xlr glow" href="javascript:void(0)">3</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link xlr glow" href="javascript:void(0)">4</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-btn next glow" href="javascript:void(0)" aria-label="Next">
+                                                <img src="assets/images/icon/arrow-right.png" alt="icon">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			</div>
+			</div>
+        </div>
+    </section>
+    <!-- Tournaments section end -->
+
+	<!-- Modal Tournaments start -->
+    <div class="betpopmodal bet-this-game">
+        <div class="modal fade" id="tournaments" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="container">
+				<div class="modal-content">
+                    <div class="row justify-content-center">
+                        <div class="col-xxl-10 col-lg-11 col-md-12">
+							<div class="single-area">
+							<div class="modal-header justify-content-center">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                            <div class="head-area d-flex align-items-center">
+                                <p><span><i class="fa fa-trophy bg-icon"></i></span>Tournament 1 <span><i class="fa fa-khanda bg-icon"></i></span> Round 1</p>
+                            </div>
+                            <div class="main-content escrow-bets-fee">
+                                <div class="team-single">
+									<div class="single-item">
+									<div class="row">
+										<div class="col-xxl-5 col-lg-5 col-sm-12">
+										<img src="assets/images/fighter_1.png" alt="icon">
+										</div>
+										<div class="col-xxl-7 col-lg-7 col-sm-12">
+										<h4>GAIA</h4>
+										<h3><span class="fee">DEMI-GOD</span></h3>
+										<span class="mdr"><i class="fa fa-portrait"></i> 45321</span>
+										<p><span class="mdr"><b>P</b> 700</span>
+										<span class="mdr"><b>L</b> 10</span></p>
+										</div>
+									</div>
+									<p><span class="mdr"><b>Won</b> 500</span>
+									<span class="mdr"><b>Lost</b> 300</span></p>
+									</div>
+                                </div>
+                                <div class="mid-area text-center">
+										<h3>VS</h3>
+                                    <div class="countdown d-flex align-items-center justify-content-center">
+                                        <h4>
+                                            <span class="hours">00</span><span class="ref">h</span><span
+                                                class="seperator">:</span>
+                                        </h4>
+                                        <h4>
+                                            <span class="minutes">00</span><span class="ref">m</span><span
+                                                class="seperator">:</span>
+                                        </h4>
+                                        <h4>
+                                            <span class="seconds">00</span><span class="ref">s</span>
+                                        </h4>
+                                    </div>
+										<h6><span><i class="fa fa-calendar-alt"></i></span>
+										Feb 20 - 20:25 UTC</h6>
+                                </div>
+                                <div class="team-single">
+									<div class="single-item">
+                                    <div class="row reverse">
+										<div class="col-xxl-7 col-lg-7 col-sm-12">
+										<h4>ZHORN</h4>
+										<h3><span class="fee">LEGENDARY</span></h3>
+										<span class="mdr"><i class="fa fa-portrait"></i> 45321</span>
+										<p><span class="mdr"><b>P</b> 610</span>
+										<span class="mdr"><b>L</b> 20</span></p>
+										</div>
+										<div class="col-xxl-5 col-lg-5 col-sm-12">
+										<img src="assets/images/fighter_2.png" alt="icon">
+										</div>
+									</div>
+									<p><span class="mdr"><b>Won</b> 500</span>
+									<span class="mdr"><b>Lost</b> 300</span></p>
+									</div>
+                                </div>
+                            </div>
+                            <div class="bottom-item">
+                                <button type="button" class="cmn-btn firstTeam text-dark" data-bs-dismiss="modal"
+                                        aria-label="Close" data-bs-toggle="modal"
+                                    data-bs-target="#betpopup">GAIA WINS</button>
+                                <span class="draw">30% <img src="assets/images/fav.png" alt="icon" style="height: 25px"> 25%</span>
+								<button type="button" class="cmn-btn lastTeam text-dark" data-bs-dismiss="modal"
+                                        aria-label="Close" data-bs-toggle="modal"
+                                    data-bs-target="#betpopup">ZHORN WINS</button>
+                            </div>
+							</div>
+						</div>
+						<div class="col-xxl-10 col-lg-11 col-md-12">
+                            <div class="single-area">
+                            <div class="head-area d-flex align-items-center">
+                                <p><span><i class="fa fa-trophy bg-icon"></i></span>Tournament 1 <span><i class="fa fa-khanda bg-icon"></i></span> Round 1</p>
+                            </div>
+                            <div class="main-content escrow-bets-fee">
+                                <div class="team-single">
+									<div class="single-item">
+									<div class="row">
+										<div class="col-xxl-5 col-lg-5 col-sm-12">
+										<img src="assets/images/zelyon.png" alt="icon">
+										</div>
+										<div class="col-xxl-7 col-lg-7 col-sm-12">
+										<h4>ZELYON</h4>
+										<h3><span class="fee">EPIC</span></h3>
+										<span class="mdr"><i class="fa fa-portrait"></i> 45321</span>
+										<p><span class="mdr"><b>P</b> 700</span>
+										<span class="mdr"><b>L</b> 10</span></p>
+										</div>
+									</div>
+									<p><span class="mdr"><b>Won</b> 500</span>
+									<span class="mdr"><b>Lost</b> 300</span></p>
+									</div>
+                                </div>
+                                <div class="mid-area text-center">
+										<h3>VS</h3>
+                                    <div class="countdown d-flex align-items-center justify-content-center">
+                                        <h4>
+                                            <span class="hours">00</span><span class="ref">h</span><span
+                                                class="seperator">:</span>
+                                        </h4>
+                                        <h4>
+                                            <span class="minutes">00</span><span class="ref">m</span><span
+                                                class="seperator">:</span>
+                                        </h4>
+                                        <h4>
+                                            <span class="seconds">00</span><span class="ref">s</span>
+                                        </h4>
+                                    </div>
+										<h6><span><i class="fa fa-calendar-alt"></i></span>
+										Feb 20 - 20:25 UTC</h6>
+                                </div>
+                                <div class="team-single">
+									<div class="single-item">
+                                    <div class="row reverse">
+										<div class="col-xxl-7 col-lg-7 col-sm-12">
+										<h4>GUAN YU</h4>
+										<h3><span class="fee">DEMI-GOD</span></h3>
+										<span class="mdr"><i class="fa fa-portrait"></i> 45321</span>
+										<p><span class="mdr"><b>P</b> 610</span>
+										<span class="mdr"><b>L</b> 20</span></p>
+										</div>
+										<div class="col-xxl-5 col-lg-5 col-sm-12">
+										<img src="assets/images/guanyu.png" alt="icon">
+										</div>
+									</div>
+									<p><span class="mdr"><b>Won</b> 500</span>
+									<span class="mdr"><b>Lost</b> 300</span></p>
+									</div>
+                                </div>
+                            </div>
+                            <div class="bottom-item">
+                                <button type="button" class="cmn-btn firstTeam text-dark">GAIA WINS</button>
+								<span class="draw">30% <img src="assets/images/fav.png" alt="icon" style="height: 25px"> 25%</span>
+                                <button type="button" class="cmn-btn lastTeam text-dark">ZHORN WINS</button>
+                            </div>
+                        </div>
+                        </div>
+						<div class="col-xxl-10 col-lg-11 col-md-12">
+                            <div class="single-area">
+                            <div class="head-area d-flex align-items-center">
+                                <p><span><i class="fa fa-trophy bg-icon"></i></span>Tournament 1 <span><i class="fa fa-khanda bg-icon"></i></span> Round 1</p>
+                            </div>
+                            <div class="main-content escrow-bets-fee">
+                                <div class="team-single">
+									<div class="single-item">
+									<div class="row">
+										<div class="col-xxl-5 col-lg-5 col-sm-12">
+										<img src="assets/images/raja.png" alt="icon">
+										</div>
+										<div class="col-xxl-7 col-lg-7 col-sm-12">
+										<h4>RAJA</h4>
+										<h3><span class="fee">MAGICAL</span></h3>
+										<span class="mdr"><i class="fa fa-portrait"></i> 45321</span>
+										<p><span class="mdr"><b>P</b> 700</span>
+										<span class="mdr"><b>L</b> 10</span></p>
+										</div>
+									</div>
+									<p><span class="mdr"><b>Won</b> 500</span>
+									<span class="mdr"><b>Lost</b> 300</span></p>
+									</div>
+                                </div>
+                                <div class="mid-area text-center">
+										<h3>VS</h3>
+                                    <div class="countdown d-flex align-items-center justify-content-center">
+                                        <h4>
+                                            <span class="hours">00</span><span class="ref">h</span><span
+                                                class="seperator">:</span>
+                                        </h4>
+                                        <h4>
+                                            <span class="minutes">00</span><span class="ref">m</span><span
+                                                class="seperator">:</span>
+                                        </h4>
+                                        <h4>
+                                            <span class="seconds">00</span><span class="ref">s</span>
+                                        </h4>
+                                    </div>
+										<h6><span><i class="fa fa-calendar-alt"></i></span>
+										Feb 20 - 20:25 UTC</h6>
+                                </div>
+                                <div class="team-single">
+									<div class="single-item">
+                                    <div class="row reverse">
+										<div class="col-xxl-7 col-lg-7 col-sm-12">
+										<h4>FREDDIE</h4>
+										<h3><span class="fee">MYTHICAL</span></h3>
+										<span class="mdr"><i class="fa fa-portrait"></i> 45321</span>
+										<p><span class="mdr"><b>P</b> 610</span>
+										<span class="mdr"><b>L</b> 20</span></p>
+										</div>
+										<div class="col-xxl-5 col-lg-5 col-sm-12">
+										<img src="assets/images/freddie.png" alt="icon">
+										</div>
+									</div>
+									<p><span class="mdr"><b>Won</b> 500</span>
+									<span class="mdr"><b>Lost</b> 300</span></p>
+									</div>
+                                </div>
+                            </div>
+                            <div class="bottom-item">
+                                <button type="button" class="cmn-btn firstTeam text-dark">GAIA WINS</button>
+								<span class="draw">30% <img src="assets/images/fav.png" alt="icon" style="height: 25px"> 25%</span>
+                                <button type="button" class="cmn-btn lastTeam text-dark">ZHORN WINS</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+				</div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal CURRENT BETS end -->
+
+	<!-- Modal HISTORY end -->
+	<div class="betpopmodal bet-this-game tournaments-section">
+        <div class="modal fade" id="tourna_his">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="container">
+				<div class="modal-content">
+                    <div class="row justify-content-center">
+                        <div class="col-xxl-10 col-lg-11 col-md-12">
+								<div class="modal-header justify-content-center">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+								<div class="single-item">
+                                    <div class="left-item">
+                                        <div class="logo-item">
+                                            <img src="assets/images/tournament_1.png" alt="icon">
+                                        </div>
+                                        <div class="mid-area">
+                                            <h3>Tournament 1</h3>
+                                            <ul>
+                                                <li>
+                                                    <span><i class="far fa-calendar-alt"></i></span>
+                                                    FEB 15 13:30 UTC
+                                                </li>
+                                                <li>
+                                                    <span><i class="fas fa-users"></i></span>
+                                                    36 PARTICIPANTS
+                                                </li>
+												<li>
+                                                    <span><i class="fas fa-info"></i></span>
+                                                    Lengendary + Demi
+                                                </li>
+                                            </ul>
+                                        </div>
+									</div>
+									</div>
+									<div class="table-responsive">
+												<table class="table">
+													<thead>
+														<tr>
+															<th scope="col">Date</th>
+															<th scope="col">Heroes</th>
+															<th scope="col">Prize</th>
+															<th scope="col">Winner</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>Feb 20 - 20:25 UTC</td>
+															<td><i class="fa fa-portrait"></i> 45321 vs <i class="fa fa-portrait"></i> 23001</td>
+															<td>20%($BELP)</td>
+															<td><i class="fa fa-portrait"></i> 45321</td>
+														</tr>
+														<tr>
+															<td>Feb 20 - 20:25 UTC</td>
+															<td><i class="fa fa-portrait"></i> 45321 vs <i class="fa fa-portrait"></i> 23001</td>
+															<td>20%($BELP)</td>
+															<td><i class="fa fa-portrait"></i> 45321</td>
+														</tr>
+														<tr>
+															<td>Feb 20 - 20:25 UTC</td>
+															<td><i class="fa fa-portrait"></i> 45321 vs <i class="fa fa-portrait"></i> 23001</td>
+															<td>20%($BELP)</td>
+															<td><i class="fa fa-portrait"></i> 45321</td>
+														</tr>
+														<tr>
+															<td>Feb 20 - 20:25 UTC</td>
+															<td><i class="fa fa-portrait"></i> 45321 vs <i class="fa fa-portrait"></i> 23001</td>
+															<td>20%($BELP)</td>
+															<td><i class="fa fa-portrait"></i> 45321</td>
+														</tr>
+														<tr>
+															<td>Feb 20 - 20:25 UTC</td>
+															<td><i class="fa fa-portrait"></i> 45321 vs <i class="fa fa-portrait"></i> 23001</td>
+															<td>20%($BELP)</td>
+															<td><i class="fa fa-portrait"></i> 45321</td>
+														</tr>
+													</tbody>
+												</table>
+									</div>
+								
+						</div>
+					</div>
+				</div>
+				</div>
+            </div>
+        </div>
+    </div>
+	<!-- Modal HISTORY end -->
+
+	<!-- BET POPUP start -->
+    <div class="log-reg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="modal fade" id="betpopup">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header justify-content-center">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="tab-content">
+                                    <div class="tab-pane fade show active" id="loginArea" role="tabpanel"
+                                        aria-labelledby="loginArea-tab">
+                                        <div class="login-reg-content">
+                                            <div class="modal-body">
+                                                <div class="head-area">
+													<img src="assets/images/glasselephant.png" alt="icon" style="height: 150px">
+                                                    <div class="bettitle">
+													<h6 class="title">Place a Bet using</h6>
+                                                    <div class="social-link d-flex align-items-center">
+                                                        <h3><img src="assets/images/fav.png" alt="icon" style="height: 35px"> $BELP</h3>
+                                                    </div>
+													</div>
+                                                </div>
+                                                <div class="form-area">
+                                                    <form action="#">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <div class="single-input">
+                                                                    <label for="logemail">Paste TX HASH of your bet</label>
+                                                                    <input type="text" id="logemail"
+                                                                        placeholder="TX HASH here">
+                                                                </div>
+                                                                <div class="single-input">
+                                                                    <label for="logpassword">Prize:</label>
+                                                                    <h6>25% of your bet</h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <div class="remember-me">
+                                                                    <label
+                                                                        class="checkbox-single d-flex align-items-center">
+                                                                        <span class="left-area">
+                                                                            <span class="checkbox-area d-flex">
+                                                                                <input type="checkbox"
+                                                                                    checked="checked">
+                                                                                <span class="checkmark"></span>
+                                                                            </span>
+                                                                            <span
+                                                                                class="item-title d-flex align-items-center">
+                                                                                <span>Add as Favourite Hero</span>
+                                                                            </span>
+                                                                        </span>
+                                                                    </label>
+                                                                    <a href="javascript:void(0)"><img src="assets/images/favourite.png"
+																	alt="favourite"> Favourite</a>
+                                                                </div>
+                                                            </div>
+                                                            <span class="btn-border w-100">
+                                                                <button class="cmn-btn w-100 text-dark" onclick="javascript:void(0)">BET FOR GAIA ID: 35585</button>
+                                                            </span>
+                                                        </div>
+                                                    </form>
+                                                    <div class="bottom-area text-center">
+                                                        <p>Need more $BELP? <a href="javascript:void(0)" class="reg-btn">Buy Now</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BET POPUP end -->
+	
+	<!-- Modal CONNECT Start -->
+    <div class="betpopmodal bet-this-game">
+        <div class="modal fade" id="connect">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="container">
+				<div class="modal-content">
+                    <div class="row justify-content-center">
+                        <div class="col-xxl-10 col-lg-11 col-md-12">
+						<img src="assets/images/launch_banner.jpg" alt="launch">
+						</div>
+                    </div>
+                </div>
+				</div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal CONNECT end -->
+	
+    <!-- SOCIALS Area Start -->
+	<section class="socials-section">
+        <div class="container">
+			<div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="newsletter">
+                        <div class="section-text text-center">
+                            <h5 class="sub-title">Need support?</h5>
+                            <h3 class="title">Join our Socials</h3>
+                            <p>Stay tuned by following us and checking our groups regularly</p>
+                        </div>
+						<div class="social-link d-flex">
+                            <a href="https://t.me/BabyElephantToken" target="_blank"><i class="fab fa-telegram"><br /></i></a>
+                            <a href="https://twitter.com/BELPToken" target="_blank"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+	    </div>
+    </section>
+	<!-- SOCIALS Area Start -->
+
+    <!-- Footer Area Start -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-bottom-area pt-120">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="menu-item">
+                            <a href="https://babyelephant.finance/" class="logo">
+                                <img src="assets/images/footer_logo.png" alt="logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="copyright">
+                            <div class="copy-area">
+                                <p> Copyright © <a href="https://babyelephant.finance/">Baby Elephant</a> | Inside 
+                                    <a href="https://www.hhnft.world/" target="_blank" class="auth">HodlerHeroes NFT</a> ecosystem
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End -->
+
+    <!--==================================================================-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/fontawesome.js"></script>
+    <script src="assets/js/plugin/slick.js"></script>
+    <script src="assets/js/plugin/jquery.nice-select.min.js"></script>
+    <script src="assets/js/plugin/jquery.downCount.js"></script>
+    <script src="assets/js/plugin/counter.js"></script>
+    <script src="assets/js/plugin/waypoint.min.js"></script>
+    <script src="assets/js/plugin/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/plugin/wow.min.js"></script>
+    <script src="assets/js/plugin/plugin.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
